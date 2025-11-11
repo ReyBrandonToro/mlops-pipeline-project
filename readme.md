@@ -665,3 +665,7 @@ Este proyecto está bajo la Licencia MIT. Ver el archivo `LICENSE` para más det
   <p><strong>⭐ Si este proyecto te fue útil, considera darle una estrella en GitHub!</strong></p>
   <p>Hecho con ❤️ y ☕</p>
 </div>
+
+---
+
+"Prueba SonarCloud"
