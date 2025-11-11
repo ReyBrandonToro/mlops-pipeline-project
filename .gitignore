@@ -131,6 +131,11 @@ COMMANDS.txt
 RESUMEN_VISUAL.txt
 RESUMEN_VISUAL_FRONTEND.txt
 
+# Ignorar todos los archivos .md excepto README.md
+*.md
+!README.md
+!readme.md
+
 # ============== MYPY ==============
 .mypy_cache/
 .dmypy.json
