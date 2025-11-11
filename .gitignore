@@ -1,0 +1,140 @@
+# ===================================
+# .gitignore - Proyecto MLOps Pipeline
+# Sistema de Detección de Fraude Financiero
+# ===================================
+
+# ============== ENTORNOS VIRTUALES ==============
+# Ignorar entornos virtuales de Python
+mlops_pipeline-venv/
+venv/
+env/
+ENV/
+.venv
+*.venv
+
+# ============== ARCHIVOS DE PYTHON ==============
+# Archivos compilados de Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+*.pyo
+*.pyd
+
+# Distribuciones / Builds
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+pip-wheel-metadata/
+share/python-wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+MANIFEST
+
+# ============== JUPYTER NOTEBOOKS ==============
+# Checkpoints de Jupyter
+.ipynb_checkpoints/
+*/.ipynb_checkpoints/*
+
+# ============== IDEs Y EDITORES ==============
+# PyCharm
+.idea/
+*.iml
+*.iws
+
+# VS Code
+.vscode/
+*.code-workspace
+
+# Spyder
+.spyderproject
+.spyproject
+
+# ============== SISTEMA OPERATIVO ==============
+# Windows
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+$RECYCLE.BIN/
+*.lnk
+
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+Icon
+._*
+
+# Linux
+*~
+.directory
+
+# ============== LOGS Y TEMPORALES ==============
+# Logs
+*.log
+logs/
+*.out
+
+# Archivos temporales
+*.tmp
+*.temp
+*.swp
+*.swo
+*~
+.cache/
+
+# ============== TESTING ==============
+# Pytest
+.pytest_cache/
+.coverage
+.coverage.*
+htmlcov/
+.tox/
+.hypothesis/
+.nox/
+coverage.xml
+*.cover
+.cache
+nosetests.xml
+
+# ============== CONFIGURACIÓN LOCAL ==============
+# Variables de entorno locales
+.env
+.env.local
+.env.*.local
+*.env
+
+# ============== DOCKER ==============
+# Sobrescrituras locales de Docker
+docker-compose.override.yml
+
+# ============== ARCHIVOS TEMPORALES DE GIT ==============
+*.orig
+*.rej
+tatus
+
+# ============== NOTAS Y PROMPTS DE DESARROLLO ==============
+# Prompts y notas de desarrollo (no para producción)
+prompts/
+COMMANDS.txt
+RESUMEN_VISUAL.txt
+RESUMEN_VISUAL_FRONTEND.txt
+
+# ============== MYPY ==============
+.mypy_cache/
+.dmypy.json
+dmypy.json
+
+# ============== PYENV ==============
+.python-version

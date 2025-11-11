@@ -1,0 +1,41 @@
+version: '3.8'
+
+services:
+  # Servicio de la API de predicción
+  fraud-detection-api:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: fraud-detection-api
+    ports:
+      - "8000:8000"
+    volumes:
+      # Montar artefactos del modelo
+      - ./best_model.joblib:/app/best_model.joblib:ro
+      - ./preprocessor.joblib:/app/preprocessor.joblib:ro
+      - ./financial_fraud_dataset.csv:/app/financial_fraud_dataset.csv:ro
+    environment:
+      - PYTHONUNBUFFERED=1
+      - LOG_LEVEL=info
+    restart: unless-stopped
+    healthcheck:
+      test: ["CMD", "curl", "-f", "http://localhost:8000/health"]
+      interval: 30s
+      timeout: 10s
+      retries: 3
+      start_period: 10s
+    networks:
+      - mlops-network
+
+networks:
+  mlops-network:
+    driver: bridge
+
+# Para ejecutar:
+# docker-compose up -d
+
+# Para ver logs:
+# docker-compose logs -f fraud-detection-api
+
+# Para detener:
+# docker-compose down

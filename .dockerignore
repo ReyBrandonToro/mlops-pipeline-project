@@ -1,0 +1,116 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+*.egg-info/
+dist/
+build/
+*.egg
+
+# Virtual environments
+mlops_pipeline-venv/
+venv/
+env/
+ENV/
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# Jupyter Notebooks
+.ipynb_checkpoints/
+*.ipynb
+
+# Git
+.git/
+.gitignore
+.gitattributes
+
+# Docker
+Dockerfile
+.dockerignore
+docker-compose.yml
+
+# Documentation
+*.md
+README.md
+docs/
+prompts/
+examples/
+
+# Test files
+tests/
+test_*.py
+*_test.py
+
+# CI/CD
+.github/
+.gitlab-ci.yml
+Jenkinsfile
+
+# Logs
+*.log
+logs/
+
+# OS
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Temporary files
+*.tmp
+*.temp
+tmp/
+temp/
+
+# Large data files (excepto el modelo y preprocesador)
+financial_fraud_dataset.csv
+
+# Plots y gráficos generados
+*.png
+*.jpg
+*.jpeg
+*.pdf
+
+# Archivos de configuración local
+config.json
+.env
+.env.local
+
+# Historial de drift (se regenera)
+drift_history.json
+
+# Archivos batch de Windows
+*.bat
+
+# Archivos de setup
+setup.bat
+COMMANDS.txt
+
+# Documentación markdown (excepto README.md principal si se quiere incluir)
+ANALISIS_ARCHIVOS_BAT.md
+check-list.md
+CHECKLIST.md
+EJECUCION_COMPLETA.md
+EJECUCION_EXITOSA.md
+GUIA_GIT_COMPLETA.md
+INSTRUCCIONES_FRONTEND.md
+Intruciones MLops.md
+PROJECT_SUMMARY.md
+QUICKSTART.md
+RESUMEN_PREPARACION_GIT.md
+RESUMEN_VISUAL_FRONTEND.txt
+RESUMEN_VISUAL.txt
+SISTEMA_COMPLETO.md
+VALIDACION_CHECKLIST.md
+VALIDACION_STREAMLIT_COMPLETA.md
+
+# Scripts de ejemplo (no necesarios en producción)
+run_training.py
+test_api.py
+main.py
